@@ -7,3 +7,47 @@ body {
     display:none;
 }
 
+#clock {
+    margin: 150px 150px 10px 150px;
+    height: 250px;
+}
+
+#clock h1 {
+    font-size: 150px;
+    color: black;
+}
+
+#greeting {
+    color: #2a2b2b;
+    font-size: 40px;
+    height: 30px;
+}
+
+#todo-form input {
+    border: none;
+    background: transparent;
+    font-size: 20px;
+    width: 35%;
+    text-align: center;
+}
+
+#todo-form input::placeholder {
+    color: #2a2b2b;
+}
+
+#todo-list {
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    flex-direction: column;
+}
+
+#todo-list li {
+    list-style-type: none;
+}
+
+.center-screen {
+    display: flex;
+    justify-content: center;
+}
+

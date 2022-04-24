@@ -7,7 +7,7 @@ const USERNAME_KEY = "username";
 
 function onLogInSubmit(event) {
     event.preventDefault();
-    login.classList.add("hidden");
+    login.classList.replace("center-screen", "hidden");
     const username = loginInput.value;
     localStorage.setItem(USERNAME_KEY, username);
     userGreeting(username);
@@ -21,7 +21,7 @@ function userGreeting(username) {
 
 const savedUsername = localStorage.getItem(USERNAME_KEY);
 
-if(savedUsername === null) {
+if (savedUsername === null) {
     login.classList.remove("hidden");
     login.addEventListener("submit", onLogInSubmit);
 } else {

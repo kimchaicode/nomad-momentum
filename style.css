@@ -4,17 +4,36 @@ body {
 }
 
 .hidden {
-    display:none;
+    display: none !important;
 }
-
+#weather {
+    margin-top: 50px;
+    font-size: 30px;
+    font-weight: bold;
+    color: #2a2b2b;
+}
 #clock {
-    margin: 150px 150px 10px 150px;
+    margin: 10px 150px 10px 150px;
     height: 250px;
 }
 
 #clock h1 {
     font-size: 150px;
     color: black;
+}
+
+#login {
+    margin-bottom: 20px;
+}
+#login input {
+    border: 3px dashed;
+    background: transparent;
+    text-align: center;
+    font-size: 40px;
+}
+
+#login input::placeholder {
+    color: #2a2b2b;
 }
 
 #greeting {
@@ -27,8 +46,10 @@ body {
     border: none;
     background: transparent;
     font-size: 20px;
-    width: 35%;
+    width: 31%;
     text-align: center;
+    border-bottom: 2px solid;
+    border-color: #2a2b2b;
 }
 
 #todo-form input::placeholder {
@@ -44,6 +65,15 @@ body {
 
 #todo-list li {
     list-style-type: none;
+    margin-bottom: 10px;
+}
+
+#todo-list li button {
+    margin-right: 10px;
+    background-color: transparent;
+    border: 2px solid;
+    border-color: #2a2b2b;
+    border-radius: 20%;
 }
 
 .center-screen {
